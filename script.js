@@ -314,3 +314,29 @@ initTypewriter();
   s.textContent='@keyframes pFloat{0%,100%{transform:translate(0,0) scale(1);opacity:.3;}25%{transform:translate(20px,-30px) scale(1.2);opacity:.6;}50%{transform:translate(-10px,-60px) scale(.8);opacity:.4;}75%{transform:translate(30px,-30px) scale(1.1);opacity:.5;}}';
   document.head.appendChild(s);
 })();
+
+const titles = [
+  'Full-Stack Developer',
+  'Cybersecurity Student',
+  'Cloud Engineer',
+  'AI Integrator',
+  'Backend Architect'
+];
+let tIdx = 0, cIdx = 0, deleting = false;
+const tw = document.querySelector('.hero-title');
+if (tw) {
+  function typeWrite() {
+    const current = titles[tIdx];
+    if (!deleting) {
+      tw.innerHTML = current.slice(0, cIdx + 1) + ' <span style="color:var(--accent2);font-weight:500;">@</span> TEK-UP<span class="typewriter"> </span>';
+      cIdx++;
+      if (cIdx === current.length) { deleting = true; setTimeout(typeWrite, 1500); return; }
+    } else {
+      tw.innerHTML = current.slice(0, cIdx - 1) + ' <span style="color:var(--accent2);font-weight:500;">@</span> TEK-UP<span class="typewriter"> </span>';
+      cIdx--;
+      if (cIdx === 0) { deleting = false; tIdx = (tIdx + 1) % titles.length; }
+    }
+    setTimeout(typeWrite, deleting ? 45 : 75);
+  }
+  typeWrite();
+}

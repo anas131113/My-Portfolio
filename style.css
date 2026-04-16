@@ -188,12 +188,12 @@ nav{
   margin-bottom:.5rem;animation:fadeInUp .7s ease .1s both;
 }
 .hero-name .accent{color:var(--accent);}
-.hero-title-wrap{
+.hero-title{
   font-size:15px;font-weight:400;color:var(--text2);
-  letter-spacing:.5px;margin-bottom:1.5rem;
-  animation:fadeInUp .7s ease .2s both;line-height:1.6;
+  letter-spacing:0.5px;margin-bottom:1.5rem;
+  animation:fadeInUp 0.7s ease 0.2s both;
 }
-.hero-title{color:var(--accent2);font-weight:500;}
+.hero-title span{color:var(--accent2);font-weight:500;}
 .typewriter-text{border-right:2px solid var(--accent2);display:inline;padding-right:2px;}
 .hero-desc{
   font-size:15px;color:var(--text2);line-height:1.8;
@@ -547,6 +547,8 @@ section{padding:6rem 3rem;}
   background:rgba(67,233,123,.08);border:.5px solid rgba(67,233,123,.2);
   border-radius:12px;display:flex;align-items:center;gap:8px;margin-bottom:1.5rem;
 }
+
+
 .contact-avail svg{width:16px;height:16px;flex-shrink:0;color:var(--accent3);}
 .contact-avail span{font-size:13px;color:var(--text);font-weight:500;}
 .contact-social{display:flex;gap:10px;margin-top:1rem;}
