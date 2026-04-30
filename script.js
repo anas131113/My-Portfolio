@@ -56,7 +56,15 @@ const translations = {
     'contact.emailLabel':'Email','contact.githubLabel':'GitHub','contact.linkedinLabel':'LinkedIn','contact.locationLabel':'Location',
     'contact.description':'I\'m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hi, feel free to reach out!',
     'contact.availability':'Currently available for Summer 2026 internships',
-    'footer.copyright':'© 2024 Mokdad Anas. All rights reserved.','footer.made':'Made with passion & caffeine ☕'
+    'footer.copyright':'© 2024 Mokdad Anas. All rights reserved.','footer.made':'Made with passion & caffeine ☕',
+    'projects.tribotics.cat':'AI · Game · Frontend',
+    'projects.tribotics.title':'Tribotics',
+    'projects.tribotics.desc':'A gamified frontend app where users design autonomous robots for extreme environments, backed by an AI chatbot. Players earn a score, receive AI-powered feedback on their design choices, and can share results with friends.',
+    'projects.souqai.cat':'AI · Hackathon · Frontend',
+    'projects.souqai.title':'SouqAI',
+    'projects.souqai.desc':'A frontend prototype built during a hackathon that helps Tunisian artisans promote their handcrafted products using AI. Designed to bridge the gap between traditional craft culture and digital markets.',
+    'cert.digitalCongress.title':'TEK-UP Digital Congress',
+    'cert.digitalCongress.sub':'Certificate of Participation · Apr–May 2026 ↗'
   },
   fr: {
     'nav.about':'À propos','nav.experience':'Expérience','nav.projects':'Projets',
@@ -111,7 +119,15 @@ const translations = {
     'contact.emailLabel':'Email','contact.githubLabel':'GitHub','contact.linkedinLabel':'LinkedIn','contact.locationLabel':'Localisation',
     'contact.description':'Je suis toujours ouvert à discuter de nouveaux projets, d\'idées créatives, ou d\'opportunités pour faire partie de votre vision.',
     'contact.availability':'Actuellement disponible pour des stages été 2026',
-    'footer.copyright':'© 2024 Mokdad Anas. Tous droits réservés.','footer.made':'Fait avec passion & caféine ☕'
+    'footer.copyright':'© 2024 Mokdad Anas. Tous droits réservés.','footer.made':'Fait avec passion & caféine ☕',
+    'projects.tribotics.cat':'IA · Jeu · Frontend',
+    'projects.tribotics.title':'Tribotics',
+    'projects.tribotics.desc':'Une application frontend gamifiée où les utilisateurs conçoivent des robots autonomes pour des environnements extrêmes, assistés par un chatbot IA. Les joueurs obtiennent un score, des retours IA sur leurs choix de conception, et peuvent partager leurs résultats.',
+    'projects.souqai.cat':'IA · Hackathon · Frontend',
+    'projects.souqai.title':'SouqAI',
+    'projects.souqai.desc':'Un prototype frontend réalisé lors d\'un hackathon pour aider les artisans tunisiens à promouvoir leurs produits artisanaux grâce à l\'IA. Conçu pour faire le pont entre la culture artisanale traditionnelle et les marchés numériques.',
+    'cert.digitalCongress.title':'Congrès Digital TEK-UP',
+    'cert.digitalCongress.sub':'Certificat de Participation · Avr–Mai 2026 ↗'
   }
 };
 
@@ -317,10 +333,9 @@ initTypewriter();
 
 const titles = [
   'Full-Stack Developer',
-  'Cybersecurity Student',
-  'Cloud Engineer',
-  'AI Integrator',
-  'Backend Architect'
+  'Software Student',
+  'Future Cybersecurity Student'
+  
 ];
 let tIdx = 0, cIdx = 0, deleting = false;
 const tw = document.querySelector('.hero-title');
